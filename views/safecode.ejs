@@ -1,0 +1,16 @@
+<ul>
+    <% for(let name of followers){ %>
+       <li><%= name %> </li>
+     <% } %>
+   </ul>
+
+
+   <% for (const category in data) { %>
+    <h2>this is page belongs to @<%= data[category].name %> </h2>
+    <button>follow</button>
+    <button>Message</button>
+
+    <p>Followers: <%= data[category].followers %></p>
+    <p>Following: <%= data[category].following %></p>
+   
+    <% } %>
